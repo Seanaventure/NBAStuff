@@ -32,8 +32,9 @@ def read(name,lst):
 
 def main():
     read(playByPlay,playByPlayList)
-    print(playByPlayList)
-    # read(eventCodes,eventList)
+    # print(playByPlayList)
+    read(eventCodes,eventList)
+    print(eventList)
     # read(lineUp,lineUpList)
     # print(eventList)
     # # intializing the dict of players with their team id and plus/minus
