@@ -1,9 +1,9 @@
 playByPlay="Play by Play Data Sample"
 eventCodes="Event Codes"
 lineUp="Game Lineup Data Sample"
-playlst=[]
-eventlst=[]
-lineuplst=[]
+playByPlayList=[]
+eventList=[]
+lineUpList=[]
 
 
 
@@ -20,17 +20,17 @@ def read(name,lst):
 
 
 def main():
-    read(playByPlay,playlst)
-    read(eventCodes,eventlst)
-    read(lineUp,lineuplst)
-    print(eventlst)
+    read(playByPlay,playByPlayList)
+    read(eventCodes,eventList)
+    read(lineUp,lineUpList)
+    print(eventList)
     # intializing the dict of players with their team id and plus/minus
     players=dict()
-    for player in lineuplst[2]:
-        players[player]=[lineuplst[3],0]
-    for event in playlst[2]:
+    for player in lineUpList[2]:
+        players[player]=[lineUpList[3],0]
+    for event in playByPlayList[2]:
         if(event==1):
-            #do plus/minus
+    # do plus/minus
 
 
 main()
