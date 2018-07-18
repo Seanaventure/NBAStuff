@@ -28,9 +28,28 @@ def main():
     players=dict()
     for player in lineUpList[2]:
         players[player]=[lineUpList[3],0]
-    for event in playByPlayList[2]:
-        if(event==1):
-    # do plus/minus
+    # player Plus/Minus
+    scoringTeam = playByPlayList[10]  # scoring team id
+    for event in playByPlayList:
+        print(event)
+        print("here")
+        if event[2] == '1':
+            # if there is a goal
+            print("true")
+            # find team id
 
+#       if(event==1):
+#           for player,list in players:
+#
+#                print(player)
+#                print("WEIOFFFFFFFFFFFFIEWOFIJEI")
+#                print(list[0])
+#                print(scoringTeam)
+#                if list[0] == scoringTeam:
+#                    print(list)
+#                    list[1] += 1
+#                    print(list)
+#                    print("wut")
+#            pass
 
 main()
